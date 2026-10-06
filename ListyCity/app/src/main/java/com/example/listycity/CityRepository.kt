@@ -30,6 +30,12 @@ class CityRepository {
             _cities[index] = updatedCity
         }*/
     }
+
+    fun deleteCity(city:City){
+        citiesRef.document(city.name).delete()
+    }
+
+
     init {
         citiesRef.addSnapshotListener { snapshot, error ->
             if (error != null) {
