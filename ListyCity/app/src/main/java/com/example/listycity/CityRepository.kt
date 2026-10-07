@@ -22,7 +22,11 @@ class CityRepository {
     }
 
     fun updateCity(oldCity: City, updatedCity: City) {
-        citiesRef.document(oldCity.name).set(updatedCity)
+        // https://stackoverflow.com/questions/74516863/how-to-update-a-document-id-of-a-firestore-database-in-kotlin
+        //citiesRef.document(oldCity.name).set(updatedCity)
+        citiesRef.document(oldCity.name).delete()
+        citiesRef.document(updatedCity.name).set(updatedCity)
+
 
         /*
         val index = _cities.indexOf(oldCity)
@@ -31,9 +35,12 @@ class CityRepository {
         }*/
     }
 
+
     fun deleteCity(city:City){
+        // https://medium.com/@deveshsharma7618/firebase-crud-operations-in-kotlin-for-android-cef1f74386d9
         citiesRef.document(city.name).delete()
     }
+
 
 
     init {

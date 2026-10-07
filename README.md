@@ -2,16 +2,20 @@
 
 ## Student Details
 
-- **Full Name:** `<Enter name>`
-- **CCID:** `<Enter ccid>`
+- **Full Name:** `Sofia Arturo Gomez`
+- **CCID:** `arturogo`
 
 ## References and Resources
 
-List any resources used here, or simply put `N/A` if not applicable.
+- https://firebase.google.com/docs/firestore/data-model
+- https://medium.com/@deveshsharma7618/firebase-crud-operations-in-kotlin-for-android-cef1f74386d9
+- https://proandroiddev.com/cheatsheet-for-centering-items-in-jetpack-compose-1e3534415237
+- https://stackoverflow.com/questions/74516863/how-to-update-a-document-id-of-a-firestore-database-in-kotlin
+- https://saveyourtime.medium.com/firebase-cloud-firestore-add-set-update-delete-get-data-6da566513b1b
 
 ## Verbal Collaboration
 
 | Student Name | CCID      |
 | ------------ | --------- |
-| `student`    | `student` |
-| `<Add more>` | `<CCID>`  |
+| Madison Levy |   mplevy  |
+
